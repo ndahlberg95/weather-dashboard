@@ -52,13 +52,34 @@ function getForecast(city) {
     });
 };
 
-function saveCity (city) {
-    localStorage.setItem($("." + event.target.id))
-    //save city to localStorage, strignifid array JSON.stringify()
-    //create city button
-    //append to .saved-cities
+var cityArray = JSON.parse(localStorage.getItem("cities"));
+
+cityArray.forEach(loadCityButton);
+
+function loadCityButton(city){
+    var cityButton = $("<button>");
+    cityButton.text(city);
+    $(".saved-cities").prepend(cityButton);
     //city button takes you to that city's weather
-}
+    cityButton.on("click", function (event) {
+        // city = $("#searched-city").val().trim();
+        event.preventDefault();
+        getCurrentWeather(city);
+        getForecast(city);
+    });
+};
+
+function saveCity (city) {
+    //save city to localStorage
+    cityArray.push(city)
+    localStorage.setItem("cities", JSON.stringify(cityArray));
+    //retrieve city from localStorage
+    var value = localStorage.getItem("cities");
+    //create city button
+    // loadCityButton(city);
+    $(".saved-cities").text("")
+    cityArray.forEach(loadCityButton); 
+};
 
 searchBtn.on("click", function (event) {
     city = $("#searched-city").val().trim();
