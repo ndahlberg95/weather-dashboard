@@ -1,0 +1,113 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    background-image: linear-gradient(to right, #3C6EC4 , #240354);
+    padding: 20px;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .cities {
+    width: 25%;
+  }
+  
+  .search {
+    text-align: left;
+  }
+
+  input{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: black;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 92%;
+  }
+
+  .searchBtn {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #5AA3E8;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .searchBtn:hover {
+    background: #33475B;
+  }
+
+  hr.new1 {
+    border-top: 2px solid black;
+  }
+
+  .saved-city {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: grey;
+    color: black;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #B7B7B7;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background: darkgrey;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  .current-weather {
+    border: 1px solid grey;
+    padding: 10px;
+  }
+
+  .forecast {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #day-1, #day-2, #day-3, #day-4, #day-5 {
+    background: #33475B;
+    color: white;
+    padding: 10px;
+    width: 20%;
+  }
+
+  #day-1, #day-2, #day-3, #day-4 {
+      margin-right: 10px;
+  }
