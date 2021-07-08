@@ -1,4 +1,5 @@
 var city = "";
+var cityArray = [];
 var currentDate = moment().format('MM/DD/YYYY');
 var searchBtn = $(".searchBtn");
 var APIKey = "bdf756b4f0f7eef1616eb378786101f4";
@@ -52,7 +53,9 @@ function getForecast(city) {
     });
 };
 
-var cityArray = JSON.parse(localStorage.getItem("cities"));
+cityArray = JSON.parse(localStorage.getItem("cities")) ?? [];
+
+console.log(cityArray);
 
 cityArray.forEach(loadCityButton);
 
