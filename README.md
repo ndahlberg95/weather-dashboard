@@ -4,5 +4,5 @@
 
 [Website screenshot](./assets/images/screenshot.png)
 
-### Deployed URL:
+### Deployed URL: https://ndahlberg95.github.io/weather-dashboard/
 ### GitHub Repo: https://github.com/ndahlberg95/weather-dashboard
